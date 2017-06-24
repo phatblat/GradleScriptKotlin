@@ -1,19 +1,5 @@
-/*allprojects {
-    declareHelloTask()
+withHelloTask()
+
+val removeBatchFile by tasks.creating(Delete::class) {
+    delete("gradlew.bat")
 }
-
-subprojects {
-    hello.doLast {
-        println("- I depend on water")
-    }
-}*/
-
-/*task removeBatchFile(type: Delete) {
-    delete 'gradlew.bat'
-}
-
-wrapper {
-    gradleVersion = '4.0'
-    distributionType = 'ALL'
-    finalizedBy removeBatchFile
-}*/
