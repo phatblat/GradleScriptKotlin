@@ -17,8 +17,16 @@ open class HelloTask : DefaultTask() {
     }
 }
 
+/*
 fun Project.declareHelloTask() =
     task<HelloTask>("hello")
 
 val Project.hello: HelloTask
     get() = tasks["hello"] as HelloTask
+*/
+
+/**
+ * Declares a [HelloTask] named `hello`.
+ */
+fun Project.withHelloTask() =
+    task<HelloTask>("hello")
